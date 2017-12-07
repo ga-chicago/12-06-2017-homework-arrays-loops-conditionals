@@ -64,12 +64,61 @@
 
 	// Yell at ninja turtles
 
-let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+// let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
-for(i = 0; i < ninjaTurtles.length; i++){
-	console.log(ninjaTurtles[i].toUpperCase());
-};
+// for(i = 0; i < ninjaTurtles.length; i++){
+// 	console.log(ninjaTurtles[i].toUpperCase());
+// };
 
+
+	// Return of the closets
+
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+
+	// Alien Shoe
+
+// let kristynsShoe = kristynsCloset.shift();
+// thomsCloset[2].push(kristynsShoe);
+
+
+	// Dress us up
+
+// console.log("Kristen is rocking that " + kristynsCloset[2] + " today!");
+// console.log("Kristen is rocking that " + kristynsCloset[3] + " today!");
+// console.log("Kristen is rocking that " + kristynsCloset[4] + " today!");
+// console.log("Thom is looking fierce in a " + thomsCloset[0][0] + ", " + thomsCloset[1][1] + ", and a " + thomsCloset[2][1]);
+// console.log("Thom is looking fierce in a " + thomsCloset[0][2] + ", " + thomsCloset[1][0] + ", and a " + thomsCloset[2][3]);
+// console.log("Thom is looking fierce in a " + thomsCloset[0][3] + ", " + thomsCloset[1][2] + ", and a " + thomsCloset[2][0]);
 
 
 
