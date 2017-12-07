@@ -95,19 +95,27 @@ const thomsCloset = [
   ]
 ];
 
-let kristynsShoe = kristynsCloset.shift();
+// let kristynsShoe = kristynsCloset.shift();
 
-thomsCloset[2].push(kristynsShoe);
+// thomsCloset[2].push(kristynsShoe);
 
-let thomsOutfitOne = [thomsCloset[0][2], thomsCloset[1][0], thomsCloset[2][0]];
-let thomsOutfitTwo = [thomsCloset[0][1], thomsCloset[1][1], thomsCloset[2][2]];
-let kristynOutfit = [kristynsCloset[1], kristynsCloset[3], kristynsCloset[5]];
+// let thomsOutfitOne = [thomsCloset[0][2], thomsCloset[1][0], thomsCloset[2][0]];
+// let thomsOutfitTwo = [thomsCloset[0][1], thomsCloset[1][1], thomsCloset[2][2]];
+// let kristynOutfit = [kristynsCloset[1], kristynsCloset[3], kristynsCloset[5]];
 
-console.log("Thom is wearing a "+thomsOutfitOne[0]+", "+thomsOutfitOne[1]+", and "+thomsOutfitOne[2]+".");
-console.log("Thom is wearing a "+thomsOutfitTwo[0]+", "+thomsOutfitTwo[1]+", and "+thomsOutfitTwo[2]+".");
-console.log("Kristyn is wearing a "+kristynOutfit[0]+", "+kristynOutfit[1]+", and "+kristynOutfit[2]+".");
+// console.log("Thom is wearing a "+thomsOutfitOne[0]+", "+thomsOutfitOne[1]+", and "+thomsOutfitOne[2]+".");
+// console.log("Thom is wearing a "+thomsOutfitTwo[0]+", "+thomsOutfitTwo[1]+", and "+thomsOutfitTwo[2]+".");
+// console.log("Kristyn is wearing a "+kristynOutfit[0]+", "+kristynOutfit[1]+", and "+kristynOutfit[2]+".");
 
+//Dirty Laundry
 
+for (let i = 0; i < kristynsCloset.length; i++) {
+	console.log("WHIIRRR: now washing "+kristynsCloset[i]);
+}
+
+for (let i = 0; i < thomsCloset.length; i++) {
+	console.log(thomsCloset[i]);
+}
 
 
 
