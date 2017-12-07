@@ -64,65 +64,65 @@
 
 
 // "Commit 7 - Kristyn and Thom have their outfits ready for class - array practice" ////////////
-const kristynsCloset = [
-    "left shoe",
-    "cowboy boots",
-    "right sock",
-    "GA hoodie",
-    "green pants",
-    "yellow knit hat",
-    "marshmallow peeps"
-];
-
-const thomsCloset = [
-    [
-        // These are Thom's shirts
-        "grey button-up",
-        "dark grey button-up",
-        "light blue button-up",
-        "blue button-up",
-    ],[
-        // These are Thom's pants
-        "grey jeans",
-        "jeans",
-        "PJs"
-    ],[
-        // Thom's accessories
-        "wool mittens",
-        "wool scarf",
-        "raybans"
-    ]
-];
-
-var kristynsShoe = kristynsCloset.shift();
-thomsCloset.push(kristynsShoe);   // .push() is a method of the array. So to place stored var into array use arrayname.push(storedVariable)
-console.log("Kristyn will be wearing " + kristynsCloset[0] + " and " + kristynsCloset[3]);
-console.log("Tomorrow Kristyn will be wearing " + kristynsCloset[1] + " and " + kristynsCloset[4]);
-console.log("The day after Kristyn will be wearing " + kristynsCloset[4] + " and " + kristynsCloset[5]);
-console.log("Today Thom is wearing " + thomsCloset[0][1] + " and " + thomsCloset[2][1]);
-console.log("Tomorrow Thom will be wearing " + thomsCloset[2][2] + " and " + thomsCloset[1][1]);
-console.log("The day after Tomorrow Thom is wearing " + thomsCloset[0][1] + " and Kristyn's " + kristynsCloset[4]);
-
-//"Commit 8 - I loops through their closets".///////
-for(var i in kristynsCloset){
-    console.log("WHIRR: Now washing " + kristynsCloset[i])
-}
-// not sure what the question is asking // using bracket notation?
-console.log(thomsCloset);
-/// maybe asking for this?
-console.log(thomsCloset[0]);
-console.log(thomsCloset[1]);
-console.log(thomsCloset[2]);
-
-// "Commit 9 - Project Euler Problem 1 answered" ///////
-// for(i=1; i <= 100; i++){
-//     if(i % 3 === 0){
-//         console.log(i)
-//     }
-//     else if(i % 5 === 0){
-//         console.log(i);
-//     }
+// const kristynsCloset = [
+//     "left shoe",
+//     "cowboy boots",
+//     "right sock",
+//     "GA hoodie",
+//     "green pants",
+//     "yellow knit hat",
+//     "marshmallow peeps"
+// ];
+//
+// const thomsCloset = [
+//     [
+//         // These are Thom's shirts
+//         "grey button-up",
+//         "dark grey button-up",
+//         "light blue button-up",
+//         "blue button-up",
+//     ],[
+//         // These are Thom's pants
+//         "grey jeans",
+//         "jeans",
+//         "PJs"
+//     ],[
+//         // Thom's accessories
+//         "wool mittens",
+//         "wool scarf",
+//         "raybans"
+//     ]
+// ];
+//
+// var kristynsShoe = kristynsCloset.shift();
+// thomsCloset.push(kristynsShoe);   // .push() is a method of the array. So to place stored var into array use arrayname.push(storedVariable)
+// console.log("Kristyn will be wearing " + kristynsCloset[0] + " and " + kristynsCloset[3]);
+// console.log("Tomorrow Kristyn will be wearing " + kristynsCloset[1] + " and " + kristynsCloset[4]);
+// console.log("The day after Kristyn will be wearing " + kristynsCloset[4] + " and " + kristynsCloset[5]);
+// console.log("Today Thom is wearing " + thomsCloset[0][1] + " and " + thomsCloset[2][1]);
+// console.log("Tomorrow Thom will be wearing " + thomsCloset[2][2] + " and " + thomsCloset[1][1]);
+// console.log("The day after Tomorrow Thom is wearing " + thomsCloset[0][1] + " and Kristyn's " + kristynsCloset[4]);
+//
+// //"Commit 8 - I loops through their closets".///////
+// for(var i in kristynsCloset){
+//     console.log("WHIRR: Now washing " + kristynsCloset[i])
 // }
+// // not sure what the question is asking // using bracket notation?
+// console.log(thomsCloset);
+// /// maybe asking for this?
+// console.log(thomsCloset[0]);
+// console.log(thomsCloset[1]);
+// console.log(thomsCloset[2]);
+
+//"Commit 9 - Project Euler Problem 1 answered" ///////
+for(i=1; i <= 100; i++){
+    if(i % 3 === 0){
+        console.log(i)
+    }
+    else if(i % 5 === 0){
+        console.log(i);
+    }
+}
 
 
 
