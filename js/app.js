@@ -66,7 +66,7 @@
 
 // let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
-// for(i = 0; i < ninjaTurtles.length; i++){
+// for(let i = 0; i < ninjaTurtles.length; i++){
 // 	console.log(ninjaTurtles[i].toUpperCase());
 // };
 
@@ -121,14 +121,21 @@ const thomsCloset = [
 // console.log("Thom is looking fierce in a " + thomsCloset[0][3] + ", " + thomsCloset[1][2] + ", and a " + thomsCloset[2][0]);
 
 
+	// Dirty Laundry
+
+// for(let i = 0; i<kristynsCloset.length; i++){
+// 	console.log("WHIRR: Now washing " + kristynsCloset[i]);
+// };
 
 
+	// Inventory - This may not be the format I was supposed to print the arrays in
 
+// console.log(thomsCloset.length);
+// console.log(thomsCloset[0].length);
 
-
-
-
-
+// for(let a = 0; a < thomsCloset.length; a++){
+	// console.log(thomsCloset[a]);
+// };
 
 
 
