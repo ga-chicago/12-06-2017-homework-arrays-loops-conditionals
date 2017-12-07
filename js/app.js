@@ -73,64 +73,79 @@
 
 // 7. Return of the Closets
 
-const kristynsCloset = [
-  "left shoe",
-  "cowboy boots",
-  "right sock",
-  "GA hoodie",
-  "green pants",
-  "yellow knit hat",
-  "marshmallow peeps"
-];
+// const kristynsCloset = [
+//   "left shoe",
+//   "cowboy boots",
+//   "right sock",
+//   "GA hoodie",
+//   "green pants",
+//   "yellow knit hat",
+//   "marshmallow peeps"
+// ];
 
-// Thom's closet is more complicated. Check out this nested data structure!!
-const thomsCloset = [
-  [
-    // These are Thom's shirts
-    "grey button-up",
-    "dark grey button-up",
-    "light blue button-up",
-    "blue button-up",
-  ],[
-    // These are Thom's pants
-    "grey jeans",
-    "jeans",
-    "PJs"
-  ],[
-    // Thom's accessories
-    "wool mittens",
-    "wool scarf",
-    "raybans"
-  ]
-];
+// // Thom's closet is more complicated. Check out this nested data structure!!
+// const thomsCloset = [
+//   [
+//     // These are Thom's shirts
+//     "grey button-up",
+//     "dark grey button-up",
+//     "light blue button-up",
+//     "blue button-up",
+//   ],[
+//     // These are Thom's pants
+//     "grey jeans",
+//     "jeans",
+//     "PJs"
+//   ],[
+//     // Thom's accessories
+//     "wool mittens",
+//     "wool scarf",
+//     "raybans"
+//   ]
+// ];
 
-let kristynsShoe = kristynsCloset.splice(0,1);
+// let kristynsShoe = kristynsCloset.splice(0,1);
 
-thomsCloset[2].splice(3,0,kristynsShoe[0]);
+// thomsCloset[2].splice(3,0,kristynsShoe[0]);
 
-// console.log(kristynsCloset);
-// console.log(thomsCloset);
+// // console.log(kristynsCloset);
+// // console.log(thomsCloset);
 
-// console.log("Thom is looking fierce in a " + thomsCloset[0][2] + ", " + thomsCloset[1][0] + ", and " + thomsCloset[2][1] + "!")
+// // console.log("Thom is looking fierce in a " + thomsCloset[0][2] + ", " + thomsCloset[1][0] + ", and " + thomsCloset[2][1] + "!")
 
-// console.log("Thom is looking fierce in a " + thomsCloset[0][1] + ", " + thomsCloset[1][1] + ", and " + thomsCloset[2][2] + "!")
+// // console.log("Thom is looking fierce in a " + thomsCloset[0][1] + ", " + thomsCloset[1][1] + ", and " + thomsCloset[2][2] + "!")
 
-// console.log("Thom is looking fierce in a " + thomsCloset[0][0] + ", " + thomsCloset[1][2] + ", and " + thomsCloset[2][3] + "!")
+// // console.log("Thom is looking fierce in a " + thomsCloset[0][0] + ", " + thomsCloset[1][2] + ", and " + thomsCloset[2][3] + "!")
 
-// 8. Dirty Laundry
+// // 8. Dirty Laundry
 
-for (let e = 0; e <= (kristynsCloset.length -1); e++){
-	console.log(kristynsCloset[e])
+// for (let e = 0; e <= (kristynsCloset.length -1); e++){
+// 	console.log(kristynsCloset[e])
+// }
+
+// console.log(thomsCloset[0][0]);
+// console.log(thomsCloset[0][1]);
+// console.log(thomsCloset[0][2]);
+// console.log(thomsCloset[0][3]);
+// console.log(thomsCloset[1][0]);
+// console.log(thomsCloset[1][1]);
+// console.log(thomsCloset[1][2]);
+// console.log(thomsCloset[2][0]);
+// console.log(thomsCloset[2][1]);
+// console.log(thomsCloset[2][2]);
+// console.log(thomsCloset[2][3]);
+
+// 9. Project Euler
+
+let Euler = [0];
+
+for(let f = 0; f <= 1000; f++){
+	if ((f % 3) == 0){
+		Euler.push(f);
+	}
+	else if((f % 5) == 0){
+		Euler.push(f)
+	}
 }
 
-console.log(thomsCloset[0][0]);
-console.log(thomsCloset[0][1]);
-console.log(thomsCloset[0][2]);
-console.log(thomsCloset[0][3]);
-console.log(thomsCloset[1][0]);
-console.log(thomsCloset[1][1]);
-console.log(thomsCloset[1][2]);
-console.log(thomsCloset[2][0]);
-console.log(thomsCloset[2][1]);
-console.log(thomsCloset[2][2]);
-console.log(thomsCloset[2][3]);
+console.log(Euler)
