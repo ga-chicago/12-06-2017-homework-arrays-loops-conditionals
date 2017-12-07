@@ -127,3 +127,24 @@ matt[2] = "Brooklyn";
 
 kristyn.pop();
 kristyn.push("Brooklyn");
+
+/*
+## Yell at the Ninja Turtles
+1. Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
+
+2. Use a `for loop` to call `toUpperCase()` on each of them and print out the result.
+
+<hr>
+&#x1F534; The commit message should read: <br>
+"Commit 6 - Yell at the Ninja Turtles answered"
+<hr>
+*/
+
+var turtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+for(i=0;i<turtles.length;i++)
+{
+  turtles[i].toUpperCase();
+  console.log(turtles[i])
+  
+}
