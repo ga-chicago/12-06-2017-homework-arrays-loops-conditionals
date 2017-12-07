@@ -48,16 +48,25 @@
 // 	}
 // }
 
-const thom = ["Thom", 1000, "Christchurch"]
-const karolin = ["Karolin", 16, "New York"]
-const kristyn = ["Kristyn", 5, "Pittsburgh"]
-const matt = ["Matt H", 186, "Philadelphia"]
+// 5. Getting to Know You 
 
-thom.splice(0,1,"Gameboy");
+// const thom = ["Thom", 1000, "Christchurch"]
+// const karolin = ["Karolin", 16, "New York"]
+// const kristyn = ["Kristyn", 5, "Pittsburgh"]
+// const matt = ["Matt H", 186, "Philadelphia"]
 
-karolin.splice(1,1,17);
+// thom.splice(0,1,"Gameboy");
 
-matt.splice(2,1,"Gotham City");
+// karolin.splice(1,1,17);
 
-kristyn.splice(2,1,"Brooklyn");
+// matt.splice(2,1,"Gotham City");
 
+// kristyn.splice(2,1,"Brooklyn");
+
+// 6. Yell at the Ninja Turtles
+
+let turtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+for (let d = 0; d <= (turtles.length -1); d++){
+	console.log(turtles[d].toUpperCase())
+}
