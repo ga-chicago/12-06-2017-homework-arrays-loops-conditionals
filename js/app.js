@@ -59,36 +59,36 @@
 // }
 
 // Return of the Closets
-// const kristynsCloset = [
-//   "left shoe",
-//   "cowboy boots",
-//   "right sock",
-//   "GA hoodie",
-//   "green pants",
-//   "yellow knit hat",
-//   "marshmallow peeps"
-// ];
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
 
-// // Thom's closet is more complicated. Check out this nested data structure!!
-// const thomsCloset = [
-//   [
-//     // These are Thom's shirts
-//     "grey button-up",
-//     "dark grey button-up",
-//     "light blue button-up",
-//     "blue button-up",
-//   ],[
-//     // These are Thom's pants
-//     "grey jeans",
-//     "jeans",
-//     "PJs"
-//   ],[
-//     // Thom's accessories
-//     "wool mittens",
-//     "wool scarf",
-//     "raybans"
-//   ]
-// ];
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
 
 // // Release Kristyn's shoe back into the wild
 // kristynsShoe = kristynsCloset.shift("left shoe");
@@ -106,7 +106,14 @@
 // // What will they wear???
 // console.log("Today Kristyn is wearing: " + kristynOutfit + ", and Thom is wearing: " + thomOutfit1 + ". Tomorrow Thom will wear: " + thomOutfit2 + ".")
 
+// Dirty Laundry
+for (i = 0; i <= kristynsCloset.length - 1; i++) {
+	console.log("WHIRR now washing " + kristynsCloset[i]);
+};
 
+for (i = 0; i <= thomsCloset.length - 1; i++) {
+	console.log(thomsCloset[i]);
+}
 
 
 
