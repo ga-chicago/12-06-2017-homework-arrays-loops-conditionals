@@ -103,8 +103,16 @@ console.log("Today Thom is wearing " + thomsCloset[0][1] + " and " + thomsCloset
 console.log("Tomorrow Thom will be wearing " + thomsCloset[2][2] + " and " + thomsCloset[1][1]);
 console.log("The day after Tomorrow Thom is wearing " + thomsCloset[0][1] + " and Kristyn's " + kristynsCloset[4]);
 
-
-
+//"Commit 8 - I loops through their closets".///////
+for(var i in kristynsCloset){
+    console.log("WHIRR: Now washing " + kristynsCloset[i])
+}
+// not sure what the question is asking // using bracket notation?
+console.log(thomsCloset);
+/// maybe asking for this?
+console.log(thomsCloset[0]);
+console.log(thomsCloset[1]);
+console.log(thomsCloset[2]);
 
 // "Commit 9 - Project Euler Problem 1 answered" ///////
 // for(i=1; i <= 100; i++){
