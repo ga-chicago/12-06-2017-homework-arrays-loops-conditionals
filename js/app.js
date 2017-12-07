@@ -10,7 +10,7 @@ Somers Matthews
 <hr>
 */
 
-for(i=1; i<20; i++)
+for(var i=1; i<20; i++)
 {
   console.log(i);
 }
@@ -25,7 +25,7 @@ for(i=1; i<20; i++)
 <hr>
 */
 
-for(i=0; i<200; i++)
+for(var i=0; i<200; i++)
 {
   console.log(i);
 }
@@ -38,7 +38,7 @@ for(i=0; i<200; i++)
 >Hint: You will need to use Math.random()
 */
 
-for(i=0; i<20; i++)
+for(var i=0; i<20; i++)
 {
   console.log("Love me, pet me! HSSSSSS!");
 
@@ -76,7 +76,7 @@ for(i=0; i<20; i++)
 4. If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number.
 */
 
-for(i=1;i<100;i++)
+for(var i=1;i<100;i++)
 {
   if((i%3)===0 && (i%5)===0)
   {
@@ -142,7 +142,7 @@ kristyn.push("Brooklyn");
 
 var turtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
-for(i=0;i<turtles.length;i++)
+for(var i=0;i<turtles.length;i++)
 {
   turtles[i].toUpperCase();
   console.log(turtles[i]);
@@ -232,7 +232,33 @@ var kristynsShoe = kristynsCloset[0];
 kristynsCloset.shift();
 thomsCloset[3].push(kristynsShoe);
 
-for(i=0;i<3;i++)
+for(var i=0;i<3;i++)
 {
   console.log("Kristyn is wearing " + kristynsCloset[i] + "." + "Tom is wearing " + thomsCloset[1][i] + ", "  + thomsCloset[2][i] + ", and " + thomsCloset[3][i] + ".");
+}
+/*
+## Dirty Laundry
+Continue looking at the closet arrays:
+1. Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
+*/
+
+for(var i=0;i<kristynsCloset.length;i++)
+{
+  console.log("WHIRR: Now washing " + kristynsCloset[i] + ".");
+}
+/*
+### Inventory
+2. Thom wants to do inventory on his closet. Using **bracket notation**, log the arrays containing all of Thom's shirts, pants, and accessories.
+
+<hr>
+&#x1F534; The commit message should read: <br>
+"Commit 8 - I loops through their closets".
+<hr>
+*/
+for(var i=0;i<thomsCloset.length;i++)
+{
+  for(var j=0,j<thomsCloset[i].length;j++)
+  {
+    console.log(thomsCloset[i][j]);
+  }
 }
