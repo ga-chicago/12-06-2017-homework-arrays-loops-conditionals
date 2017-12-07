@@ -34,4 +34,13 @@
 //   }
 
 
+//Getting to know you 
 
+//thom.shift();
+//thom.unshift("Gameboy");
+// karolin[1] = 17;
+// matt[2] = "Gotham City";
+//kristyn.pop("Pittsburg");
+//kristyn.push("Brooklyn")
+
+//
