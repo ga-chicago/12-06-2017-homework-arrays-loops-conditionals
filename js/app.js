@@ -62,38 +62,38 @@
 // 	console.log(bigTurt);
 // }
 
-//Return of the Closets
+// //Return of the Closets
 
-const kristynsCloset = [
-  "left shoe",
-  "cowboy boots",
-  "right sock",
-  "GA hoodie",
-  "green pants",
-  "yellow knit hat",
-  "marshmallow peeps"
-];
+// const kristynsCloset = [
+//   "left shoe",
+//   "cowboy boots",
+//   "right sock",
+//   "GA hoodie",
+//   "green pants",
+//   "yellow knit hat",
+//   "marshmallow peeps"
+// ];
 
-// Thom's closet is more complicated. Check out this nested data structure!!
-const thomsCloset = [
-  [
-    // These are Thom's shirts
-    "grey button-up",
-    "dark grey button-up",
-    "light blue button-up",
-    "blue button-up",
-  ],[
-    // These are Thom's pants
-    "grey jeans",
-    "jeans",
-    "PJs"
-  ],[
-    // Thom's accessories
-    "wool mittens",
-    "wool scarf",
-    "raybans"
-  ]
-];
+// // Thom's closet is more complicated. Check out this nested data structure!!
+// const thomsCloset = [
+//   [
+//     // These are Thom's shirts
+//     "grey button-up",
+//     "dark grey button-up",
+//     "light blue button-up",
+//     "blue button-up",
+//   ],[
+//     // These are Thom's pants
+//     "grey jeans",
+//     "jeans",
+//     "PJs"
+//   ],[
+//     // Thom's accessories
+//     "wool mittens",
+//     "wool scarf",
+//     "raybans"
+//   ]
+// ];
 
 // let kristynsShoe = kristynsCloset.shift();
 
@@ -109,15 +109,32 @@ const thomsCloset = [
 
 //Dirty Laundry
 
-for (let i = 0; i < kristynsCloset.length; i++) {
-	console.log("WHIIRRR: now washing "+kristynsCloset[i]);
+// for (let i = 0; i < kristynsCloset.length; i++) {
+// 	console.log("WHIIRRR: now washing "+kristynsCloset[i]);
+// }
+
+// for (let i = 0; i < thomsCloset.length; i++) {
+// 	console.log(thomsCloset[i]);
+// }
+
+//Multiples of 3 and 5
+
+let multiplesArray = [];
+let total = 0;
+
+for (let i = 0; i <= 1000; i++) {
+	if (i % 3 === 0 || i % 5 === 0) {
+		multiplesArray.push(i);
+	}
 }
 
-for (let i = 0; i < thomsCloset.length; i++) {
-	console.log(thomsCloset[i]);
+console.log(multiplesArray.length);
+
+for (let i = 0; i < multiplesArray.length; i++) {
+	total += i;
 }
 
-
+console.log(total);
 
 
 
