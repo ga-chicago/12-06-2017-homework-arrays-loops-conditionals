@@ -43,15 +43,35 @@
 
 //Getting to Know You
 
-thom.shift();
-thom.unshift("gameboy");
+// thom.shift();
+// thom.unshift("gameboy");
 
-karolyn[1] = karolyn[1] + 1;
+// karolyn[1] = karolyn[1] + 1;
 
-matt[2] = "gotham city";
+// matt[2] = "gotham city";
 
-kristyn.pop();
-kristyn.push("brooklyn");
+// kristyn.pop();
+// kristyn.push("brooklyn");
+
+//Yell at the Ninja Turtles
+
+let turtles = ["donatello", "raphael", "leonardo", "michaelangelo"];
+
+for (let i = 0; i < turtles.length; i++) {
+	let bigTurt = turtles[i].toUpperCase();
+	console.log(bigTurt);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
