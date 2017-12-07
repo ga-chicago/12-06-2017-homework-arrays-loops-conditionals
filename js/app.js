@@ -133,8 +133,10 @@ const thomsCloset = [
 // console.log(thomsCloset.length);
 // console.log(thomsCloset[0].length);
 
-// for(let a = 0; a < thomsCloset.length; a++) {
-// 		console.log(thomsCloset[a]);
+// for(let a = 0; a < thomsCloset.length; a++){
+//   for(let b = 0; b < thomsCloset[a].length; b++){
+//     console.log(thomsCloset[a][b]);
+//   };
 // };
 
 
