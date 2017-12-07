@@ -145,6 +145,94 @@ var turtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 for(i=0;i<turtles.length;i++)
 {
   turtles[i].toUpperCase();
-  console.log(turtles[i])
-  
+  console.log(turtles[i]);
+
+}
+/*
+## Return of the Closets
+
+Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript. Use this data to answer the following questions.
+
+```javascript
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+```
+
+### Alien Attire
+1. Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer! Remove Kristyn's shoe from the array and save it to the variable `kristynsShoe`. Use that variable to add Kristyn's lost shoe to Thom's accessories array.
+
+### Dress Us Up
+1. Modify your code to put together **3 separate outfits** for Kristyn and Thom. Put the output in a sentence to tell us what we'll be wearing. Mix and match!
+
+<hr>
+&#x1F534; The commit message should read: <br>
+"Commit 7 - Kristyn and Thom have their outfits ready for class - array practice"
+<hr>
+*/
+
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+var kristynsShoe = kristynsCloset[0];
+kristynsCloset.shift();
+thomsCloset[3].push(kristynsShoe);
+
+for(i=0;i<3;i++)
+{
+  console.log("Kristyn is wearing " + kristynsCloset[i] + "." + "Tom is wearing " + thomsCloset[1][i] + ", "  + thomsCloset[2][i] + ", and " + thomsCloset[3][i] + ".");
 }
