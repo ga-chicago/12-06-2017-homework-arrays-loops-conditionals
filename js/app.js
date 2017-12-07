@@ -41,18 +41,22 @@
 // }
 
 // Getting to Know You 
-const thom = ["Thom", 1000, "Christchurch"]
-const karolin = ["Karolin", 16, "New York"]
-const kristyn = ["Kristyn", 5, "Pittsburgh"]
-const matt = ["Matt H", 186, "Philadelphia"]
+// const thom = ["Thom", 1000, "Christchurch"]
+// const karolin = ["Karolin", 16, "New York"]
+// const kristyn = ["Kristyn", 5, "Pittsburgh"]
+// const matt = ["Matt H", 186, "Philadelphia"]
 
-thom[0] = "Gameboy";
-karolin[1] = 17;
-matt[2] = "Gotham City";
-kristyn[2] = "Brooklyn";
+// thom[0] = "Gameboy";
+// karolin[1] = 17;
+// matt[2] = "Gotham City";
+// kristyn[2] = "Brooklyn";
 
+// Yell at the Ninja Turtles
+var ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
 
-
+for(i = 0; i <= ninjaTurtles.length - 1; i++) {
+	console.log(ninjaTurtles[i].toUpperCase());
+}
 
 
 
