@@ -10,7 +10,7 @@ Somers Matthews
 <hr>
 */
 
-for(var i=1; i<20; i++)
+for(var i=1; i<=20; i++)
 {
   console.log(i);
 }
@@ -25,7 +25,7 @@ for(var i=1; i<20; i++)
 <hr>
 */
 
-for(var i=0; i<200; i++)
+for(var i=0; i<=200; i++)
 {
   console.log(i);
 }
@@ -37,27 +37,26 @@ for(var i=0; i<200; i++)
 
 >Hint: You will need to use Math.random()
 */
-
-for(var i=0; i<20; i++)
+var randomNum = 0;
+for(var i=0; i<=20; i++)
 {
   console.log("Love me, pet me! HSSSSSS!");
 
   if((i%2)===0)
   {
-    var randomNum = 3 * math.random()
-    if(0 <= randomNum < 1)
+    randomNum = 3 * Math.random();
+    console.log(randomNum);
+
+    if(0 <= randomNum && randomNum < 1)
     {
     console.log("...human...why you taking pictures of me?...");
-    }
-    else if(1 <= randomNum < 2)
+  } else if(1 <= randomNum && randomNum < 2)
     {
       console.log("...the catnip made me do it...");
-    }
-    else if(2 <= randomNum < 3)
+    } else if(2 <= randomNum && randomNum < 3)
     {
       console.log("...why does the red dot always get away...");
-    }
-    else {
+    } else {
       console.log("SOMETHING IS WRONG WITH YOUR CAT TALKING LOOP")
     }
   }
@@ -76,7 +75,7 @@ for(var i=0; i<20; i++)
 4. If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number.
 */
 
-for(var i=1;i<100;i++)
+for(var i=1;i<=100;i++)
 {
   if((i%3)===0 && (i%5)===0)
   {
@@ -144,8 +143,8 @@ var turtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
 for(var i=0;i<turtles.length;i++)
 {
-  turtles[i].toUpperCase();
-  console.log(turtles[i]);
+
+  console.log(turtles[i].toUpperCase());
 
 }
 /*
@@ -227,14 +226,15 @@ const thomsCloset = [
     "raybans"
   ]
 ];
-
+//console.log("first value kristyn =" + kristynsCloset[0])
 var kristynsShoe = kristynsCloset[0];
 kristynsCloset.shift();
-thomsCloset[3].push(kristynsShoe);
+thomsCloset[2].push(kristynsShoe);
+//console.log("varible for kristiansShoe" + thomsCloset[2][3])
 
 for(var i=0;i<3;i++)
 {
-  console.log("Kristyn is wearing " + kristynsCloset[i] + "." + "Tom is wearing " + thomsCloset[1][i] + ", "  + thomsCloset[2][i] + ", and " + thomsCloset[3][i] + ".");
+  console.log("Kristyn is wearing " + kristynsCloset[i] + "." + "Tom is wearing " + thomsCloset[0][i] + ", "  + thomsCloset[1][i] + ", and " + thomsCloset[2][i] + ".");
 }
 /*
 ## Dirty Laundry
@@ -242,7 +242,7 @@ Continue looking at the closet arrays:
 1. Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
 */
 
-for(var i=0;i<kristynsCloset.length;i++)
+for(var i=0;i<Object.keys(kristynsCloset).length;i++)
 {
   console.log("WHIRR: Now washing " + kristynsCloset[i] + ".");
 }
@@ -255,10 +255,104 @@ for(var i=0;i<kristynsCloset.length;i++)
 "Commit 8 - I loops through their closets".
 <hr>
 */
-for(var i=0;i<thomsCloset.length;i++)
+for(var i=0;i<Object.keys(thomsCloset).length;i++)
 {
-  for(var j=0,j<thomsCloset[i].length;j++)
+  for(var j=0;j<Object.keys(thomsCloset[i]).length;j++)
   {
     console.log(thomsCloset[i][j]);
   }
 }
+/*
+## Multiples of 3 and 5
+
+_Yes, you might have tackled this earlier, but try it again (don't look back at your other code :eyes:)_
+
+If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+Find the sum of all the multiples of 3 or 5 below 1000.
+
+:clap: You just solved [Project Euler](https://projecteuler.net/problem=1) problem 1! :clap:
+
+<hr>
+&#x1F534; The commit message should read: <br>
+"Commit 9 - Project Euler Problem 1 answered"
+<hr>
+*/
+var multiplesOfThree = [];
+var multiplesOfFive = [];
+var multiplesOfFifteen = [];
+var sum = 0;
+for(var i=1;(i*3)<1000;i++)
+{
+  multiplesOfThree[i] = i*3;
+  sum = sum + multiplesOfThree[i];
+
+}
+for(var j=1;(j*5)<1000;j++)
+{
+  multiplesOfFive[j] = j*5;
+  sum = sum + multiplesOfFive[j];
+}
+for(var k=1;(k*15)<1000;k++)
+{
+  multiplesOfFifteen[k] = k*15;
+  sum = sum - multiplesOfFifteen[k];
+}
+//console.log(multiplesOfThree);
+//console.log(multiplesOfFive);
+//console.log(multiplesOfFifteen)
+console.log("sum = " + sum);
+/*
+## Triangles
+
+0. declare a variable `argument` and set it equal to 7.
+
+1. Write a loop that console logs a "left isosceles" triangle (SEE BELOW) made of '#' that has the height and length of `argument`.
+
+>Ex: argument is 7
+```
+#
+##
+###
+####
+#####
+######
+#######
+```
+
+const argument = 7;
+array = []
+for(var i=1; i<=argument; i++)
+{
+  array.push("#")
+
+console.log(array.join('')+ "\n")
+}
+/*
+2. Write a loop that console logs a "right isosceles" triangle (SEE BELOW) made of '#' that has the height and length of `argument`.
+
+>Ex: argument is 7
+```
+      #
+     ##
+    ###
+   ####
+  #####
+ ######
+#######
+```
+
+
+array2 = []
+array2.length = 7
+for(var i=1; i<=argument; i++)
+{
+  array2.push("#")
+
+for(var j=7;j>i;j--)
+{
+  array2.push(" ")
+}
+console.log(array2.reverse().join('') + "\n")
+}
+*/
