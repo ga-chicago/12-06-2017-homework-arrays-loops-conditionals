@@ -43,4 +43,15 @@
 //kristyn.pop("Pittsburg");
 //kristyn.push("Brooklyn")
 
-//
+//yelling at the ninja turtles
+
+//let ninja-turtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+// for(ninja-turtles){
+//   console.log(ninja-turtles);
+// }
+//for(ninja-turtles.toUpperCase){
+//   console.log(ninja-turtles)
+// }
+
+
+
