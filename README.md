@@ -69,7 +69,7 @@ Final note: You are not alone! Everyone else in the class is working on this as 
 "Commit 3 - Excited Kittens answered"
 <hr>
 
-## Fizz Buzz 
+## Fizz Buzz
 
 >NOTE: THIS IS A CLASSIC RITE-OF-PASSAGE FOR JAVASCRIPT PROGRAMMERS, ESPECIALLY ONES AT GA
 
@@ -282,5 +282,3 @@ Expected output:
 &#x1F534; The commit message should read: <br>
 "Commit 11 - Find the Median answered"
 <hr>
-
-
