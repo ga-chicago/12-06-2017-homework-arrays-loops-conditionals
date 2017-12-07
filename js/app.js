@@ -48,7 +48,46 @@
 // 	console.log(tmnt[i].toUpperCase());
 // };
 
-
+// Return of the Closets
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+// Alien Attire
+// let shoe = kristynsCloset[0];
+// thomsCloset.push(shoe);
+// Dress Us Up
+// let kristynOutfit = "Kristyn will wear " + kristynsCloset[0] + " and " + kristynsCloset[2] + ".";
+// let thomOutfit = "Thom will wear " + thomsCloset[0][2] + " and " + thomsCloset[2][0] + ".";
+// let thomOutfit2 = "Thom will wear " + thomsCloset[1][0] + " and " + thomsCloset[2][0] + ".";
+// console.log(kristynOutfit);
+// console.log(thomOutfit);
+// console.log(thomOutfit2);
 
 
 
