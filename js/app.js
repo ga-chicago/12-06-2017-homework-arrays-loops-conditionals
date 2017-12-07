@@ -95,3 +95,35 @@ for(i=1;i<100;i++)
   console.log(i);
   }
 }
+
+/*
+## Getting to Know You
+Use the following arrays to answer the questions below (name, age, hometown):
+```
+const thom = ["Thom", 1000, "Christchurch"]
+const karolin = ["Karolin", 16, "New York"]
+const kristyn = ["Kristyn", 5, "Pittsburgh"]
+const matt = ["Matt H", 186, "Philadelphia"]
+```
+1. Matt H. decides that Thom. can't be named "Thom" anymore. Remove "Thom" from the `thom` array and replace it with "Gameboy".
+
+2. Karolin just had her birthday; change Karolin's array to reflect her being a year older.
+
+3. Change Matt H's hometown from Philadelphia to "Gotham City".
+
+4. Remove "Pittsburgh" from Kristyn's array and add "Brooklyn".
+*/
+const thom = ["Thom", 1000, "Christchurch"];
+const karolin = ["Karolin", 16, "New York"];
+const kristyn = ["Kristyn", 5, "Pittsburgh"];
+const matt = ["Matt H", 186, "Philadelphia"];
+
+thom.shift();
+thom.unshift("Gameboy");
+
+karolin[1] = karolin[1]+1
+
+matt[2] = "Brooklyn";
+
+kristyn.pop();
+kristyn.push("Brooklyn");
