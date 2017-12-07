@@ -36,14 +36,28 @@
 
 // 4. Fizz Buzz
 
-for (let c = 1; c <= 100; c++){
-	if ((c % 3) == 0){
-		console.log("Fizz")
-	}
-	else if((c % 5) == 0){
-		console.log("Buzz")
-	}
-	else if(((c % 5) == 0) && ((c % 3) == 0)) {
-		console.log("FizzBuzz")
-	}
-}
+// for (let c = 1; c <= 100; c++){
+// 	if ((c % 3) == 0){
+// 		console.log("Fizz")
+// 	}
+// 	else if((c % 5) == 0){
+// 		console.log("Buzz")
+// 	}
+// 	else if(((c % 5) == 0) && ((c % 3) == 0)) {
+// 		console.log("FizzBuzz")
+// 	}
+// }
+
+const thom = ["Thom", 1000, "Christchurch"]
+const karolin = ["Karolin", 16, "New York"]
+const kristyn = ["Kristyn", 5, "Pittsburgh"]
+const matt = ["Matt H", 186, "Philadelphia"]
+
+thom.splice(0,1,"Gameboy");
+
+karolin.splice(1,1,17);
+
+matt.splice(2,1,"Gotham City");
+
+kristyn.splice(2,1,"Brooklyn");
+
