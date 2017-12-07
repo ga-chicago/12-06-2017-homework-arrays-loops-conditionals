@@ -99,7 +99,14 @@
 // 	console.log(thomsCloset[i]);
 // };
 
-
+// Multiples of 3 and 5
+// let bucket = 0;
+// for (var i = 0; i < 1000; i++) {
+// 	if (!(i % 3) || !(i % 5)) {
+// 		bucket += i;
+// 	};
+// };
+// console.log(bucket);
 
 
 
