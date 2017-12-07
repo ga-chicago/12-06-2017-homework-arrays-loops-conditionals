@@ -32,6 +32,22 @@
 // 	}
 // };
 
+// Getting To Know you
+// const thom = ["Thom", 1000, "Christchurch"];
+// const karolin = ["Karolin", 16, "New York"];
+// const kristyn = ["Kristyn", 5, "Pittsburgh"];
+// const matt = ["Matt H", 186, "Philadelphia"];
+// thom[0] = "Gameboy";
+// karolin[1] = 17;
+// matt[2] = "Gotham City";
+// kristyn.splice(2,1,"Brooklyn");
+
+// Yell at the Ninja Turtles
+// let tmnt = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+// for (let i = 0; i < tmnt.length; i++) {
+// 	console.log(tmnt[i].toUpperCase());
+// };
+
 
 
 
