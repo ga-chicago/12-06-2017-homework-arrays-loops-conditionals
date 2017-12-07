@@ -28,22 +28,22 @@
 //     // console.log(randomCatQuote[0]);
 // }
 ////"Commit 4 - Fizz Buzz answered"//////////////
-for(i = 1;i <= 100; i++){
-    if(i % 3 === 0){
-        if(i % 5 === 0){
-            console.log("FizzBuzz");
-        }
-        else{
-            console.log("Fizz");
-        }
-    }
-    else if(i % 5 === 0){
-        console.log("Buzz");
-    }
-    else{
-        console.log(i);
-    }
-}
+// for(i = 1;i <= 100; i++){
+//     if(i % 3 === 0){
+//         if(i % 5 === 0){
+//             console.log("FizzBuzz");
+//         }
+//         else{
+//             console.log("Fizz");
+//         }
+//     }
+//     else if(i % 5 === 0){
+//         console.log("Buzz");
+//     }
+//     else{
+//         console.log(i);
+//     }
+// }
 
 // "Commit 5 - Getting to Know You answered"////////////////
 // const thom = ["Thom", 1000, "Christchurch"];
@@ -94,7 +94,16 @@ const thomsCloset = [
     ]
 ];
 
-var kristynsShoe = kristynsCloset[0];
+var kristynsShoe = kristynsCloset.shift();
+thomsCloset.push(kristynsShoe);   // .push() is a method of the array. So to place stored var into array use arrayname.push(storedVariable)
+console.log("Kristyn will be wearing " + kristynsCloset[0] + " and " + kristynsCloset[3]);
+console.log("Tomorrow Kristyn will be wearing " + kristynsCloset[1] + " and " + kristynsCloset[4]);
+console.log("The day after Kristyn will be wearing " + kristynsCloset[4] + " and " + kristynsCloset[5]);
+console.log("Today Thom is wearing " + thomsCloset[0][1] + " and " + thomsCloset[2][1]);
+console.log("Tomorrow Thom will be wearing " + thomsCloset[2][2] + " and " + thomsCloset[1][1]);
+console.log("The day after Tomorrow Thom is wearing " + thomsCloset[0][1] + " and Kristyn's " + kristynsCloset[4]);
+
+
 
 
 // "Commit 9 - Project Euler Problem 1 answered" ///////
@@ -107,14 +116,6 @@ var kristynsShoe = kristynsCloset[0];
 //     }
 // }
 
-for(i=1; i <=10; i++){
-    if(i % 2 === 0){
-        console.log("The numbber is even");
-    }
-    else{
-        console.log("the number is odd");
-    }
-}
 
 
 
