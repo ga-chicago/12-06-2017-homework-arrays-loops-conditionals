@@ -108,11 +108,29 @@ let kristynsShoe = kristynsCloset.splice(0,1);
 
 thomsCloset[2].splice(3,0,kristynsShoe[0]);
 
-console.log(kristynsCloset);
-console.log(thomsCloset);
+// console.log(kristynsCloset);
+// console.log(thomsCloset);
 
-console.log("Thom is looking fierce in a " + thomsCloset[0][2] + ", " + thomsCloset[1][0] + ", and " + thomsCloset[2][1] + "!")
+// console.log("Thom is looking fierce in a " + thomsCloset[0][2] + ", " + thomsCloset[1][0] + ", and " + thomsCloset[2][1] + "!")
 
-console.log("Thom is looking fierce in a " + thomsCloset[0][1] + ", " + thomsCloset[1][1] + ", and " + thomsCloset[2][2] + "!")
+// console.log("Thom is looking fierce in a " + thomsCloset[0][1] + ", " + thomsCloset[1][1] + ", and " + thomsCloset[2][2] + "!")
 
-console.log("Thom is looking fierce in a " + thomsCloset[0][0] + ", " + thomsCloset[1][2] + ", and " + thomsCloset[2][3] + "!")
+// console.log("Thom is looking fierce in a " + thomsCloset[0][0] + ", " + thomsCloset[1][2] + ", and " + thomsCloset[2][3] + "!")
+
+// 8. Dirty Laundry
+
+for (let e = 0; e <= (kristynsCloset.length -1); e++){
+	console.log(kristynsCloset[e])
+}
+
+console.log(thomsCloset[0][0]);
+console.log(thomsCloset[0][1]);
+console.log(thomsCloset[0][2]);
+console.log(thomsCloset[0][3]);
+console.log(thomsCloset[1][0]);
+console.log(thomsCloset[1][1]);
+console.log(thomsCloset[1][2]);
+console.log(thomsCloset[2][0]);
+console.log(thomsCloset[2][1]);
+console.log(thomsCloset[2][2]);
+console.log(thomsCloset[2][3]);
