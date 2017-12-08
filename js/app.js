@@ -320,14 +320,7 @@ console.log("sum = " + sum);
 #######
 ```
 
-const argument = 7;
-array = []
-for(var i=1; i<=argument; i++)
-{
-  array.push("#")
 
-console.log(array.join('')+ "\n")
-}
 /*
 2. Write a loop that console logs a "right isosceles" triangle (SEE BELOW) made of '#' that has the height and length of `argument`.
 
@@ -342,17 +335,77 @@ console.log(array.join('')+ "\n")
 #######
 ```
 
+*/
 
-array2 = []
-array2.length = 7
+const argument = 7;
+array = [];
 for(var i=1; i<=argument; i++)
 {
-  array2.push("#")
+  array.push("#");
 
-for(var j=7;j>i;j--)
+console.log(array.join('')+ "\n")
+}
+console.log('\n');
+var array2 = [];
+
+for(var i=1; i<=argument; i++)
 {
-  array2.push(" ")
-}
+  for(k=1;k<=i;k++)
+  {
+  array2.push("#");
+  }
+  for(var j=0;j<(7-i);j++)
+  {
+  array2.push(" ");
+  }
+
 console.log(array2.reverse().join('') + "\n")
+array2 = []
 }
-*/
+
+console.log('\n');
+array = [];
+for(var i=0; i<argument; i++)
+{
+  array.push("#");
+}
+
+for(var i=0; i<argument; i++)
+{
+  console.log(array.join('')+ "\n")
+  array.pop();
+}
+
+console.log('\n');
+
+array = [];
+for(var i=0; i<argument; i++)
+{
+  array.push("#");
+}
+
+for(var i=0; i<argument; i++)
+{
+for(j=0;j<i;j++)
+{
+array.pop();
+}
+for(j=0;j<i;j++)
+{
+array.push(' ');
+}
+console.log(array.reverse().join('') + "\n");
+array.reverse();
+
+}
+var sum = 0;
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+for(i=0;i<nums.length; i++)
+{
+  sum = sum + nums[i];
+}
+console.log(nums.length);
+console.log(sum);
+console.log("Median is " + Math.floor(sum/nums.length));
+// I'm getting 16 not the expected value of 15. I'm pretty sure I'm right with 16.
