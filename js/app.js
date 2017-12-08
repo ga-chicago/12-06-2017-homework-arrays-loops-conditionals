@@ -398,14 +398,15 @@ console.log(array.reverse().join('') + "\n");
 array.reverse();
 
 }
-var sum = 0;
-const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
 
-for(i=0;i<nums.length; i++)
-{
-  sum = sum + nums[i];
-}
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+nums.sort()
+var i = Math.floor(nums.length/2);
+
+console.log(nums[i]);
+/*
 console.log(nums.length);
 console.log(sum);
 console.log("Median is " + Math.floor(sum/nums.length));
 // I'm getting 16 not the expected value of 15. I'm pretty sure I'm right with 16.
+*/
