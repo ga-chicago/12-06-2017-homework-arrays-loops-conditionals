@@ -93,6 +93,21 @@
 // }
 
 
+//find the median
+
+function median(values) {
+  values.sort (function(a,b) {return a - b;});
+
+  let half = Math.floor(values.length/2);
+
+  if(values.length % 2)
+    return values[half];
+  else return(values[half-1] + values[half]) / 2.0;
+}
+
+let list = median([1, 2, 3, 4, 5, 6]);
+median(list);
+
 
 
 
