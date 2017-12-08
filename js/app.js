@@ -137,15 +137,125 @@
 
 // 9. Project Euler
 
-let Euler = [0];
+// let Euler = [];
 
-for(let f = 0; f <= 1000; f++){
-	if ((f % 3) == 0){
-		Euler.push(f);
+// let total = 0;
+
+// for(let f = 0; f <= 1000; f++){
+// 	if ((f % 3) == 0){
+// 		Euler.push(f);
+// 	}
+// 	else if((f % 5) == 0){
+// 		Euler.push(f)
+// 	}
+// }
+
+// console.log(Euler)
+
+// for (i = 0; 1)
+
+// console.log(Euler.reduce(function (a, b) {
+//   return a + b;
+// }, 0)
+// )
+
+10. Triangles
+
+let argument = 7
+
+for (i = 1; i <= argument; i++) {
+	if (i == 1) {
+		console.log("#")
 	}
-	else if((f % 5) == 0){
-		Euler.push(f)
+	else if (i == 2) {
+		console.log("##")
+	}
+	else if (i == 3) {
+		console.log("###")
+	}
+	else if (i == 4) {
+		console.log("####")
+	}
+	else if (i == 5) {
+		console.log("#####")
+	}
+	else if (i == 6) {
+		console.log("######")
+	}
+	else if (i == 7) {
+		console.log("#######")
 	}
 }
 
-console.log(Euler)
+for (i = 1; i <= argument; i++) {
+	if (i == 1) {
+		console.log("      #")
+	}
+	else if (i == 2) {
+		console.log("     ##")
+	}
+	else if (i == 3) {
+		console.log("    ###")
+	}
+	else if (i == 4) {
+		console.log("   ####")
+	}
+	else if (i == 5) {
+		console.log("  #####")
+	}
+	else if (i == 6) {
+		console.log(" ######")
+	}
+	else if (i == 7) {
+		console.log("#######")
+	}
+}
+
+for (i = 1; i <= argument; i++) {
+	if (i == 1) {
+		console.log("#######")
+	}
+	else if (i == 2) {
+		console.log("######")
+	}
+	else if (i == 3) {
+		console.log("#####")
+	}
+	else if (i == 4) {
+		console.log("####")
+	}
+	else if (i == 5) {
+		console.log("###")
+	}
+	else if (i == 6) {
+		console.log("##")
+	}
+	else if (i == 7) {
+		console.log("#")
+	}
+}
+
+
+for (i = 1; i <= argument; i++) {
+	if (i == 1) {
+		console.log("#######")
+	}
+	else if (i == 2) {
+		console.log(" ######")
+	}
+	else if (i == 3) {
+		console.log("  #####")
+	}
+	else if (i == 4) {
+		console.log("   ####")
+	}
+	else if (i == 5) {
+		console.log("    ###")
+	}
+	else if (i == 6) {
+		console.log("     ##")
+	}
+	else if (i == 7) {
+		console.log("      #")
+	}
+}
