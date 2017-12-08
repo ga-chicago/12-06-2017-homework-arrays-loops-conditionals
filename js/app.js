@@ -54,4 +54,45 @@
 // }
 
 
+//triangles 
+
+
+// let argument = 7;
+// for(argument == 7){
+//   console.log("left isosceles"      #
+// ##
+// ###
+// ####
+// #####
+// ######
+// #######);
+// } else if (argument == 7){
+//   console.log("right isosceles"      #
+//      ##
+//     ###
+//    ####
+//   #####
+//  ######
+// #######);
+// } else if (argument == 7){
+//   console.log("upside down left"  #######
+// ######
+// #####
+// ####
+// ###
+// ##
+// #);
+// } else if (argument == 7){
+//   console.log("upside down right"  #######
+//  ######
+//   #####
+//    ####
+//     ###
+//      ##
+//       #);
+// }
+
+
+
+
 
