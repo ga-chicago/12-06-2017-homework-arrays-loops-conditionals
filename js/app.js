@@ -159,103 +159,113 @@
 // }, 0)
 // )
 
-10. Triangles
+// 10. Triangles
 
-let argument = 7
+// let argument = 7
 
-for (i = 1; i <= argument; i++) {
-	if (i == 1) {
-		console.log("#")
-	}
-	else if (i == 2) {
-		console.log("##")
-	}
-	else if (i == 3) {
-		console.log("###")
-	}
-	else if (i == 4) {
-		console.log("####")
-	}
-	else if (i == 5) {
-		console.log("#####")
-	}
-	else if (i == 6) {
-		console.log("######")
-	}
-	else if (i == 7) {
-		console.log("#######")
-	}
-}
+// for (i = 1; i <= argument; i++) {
+// 	if (i == 1) {
+// 		console.log("#")
+// 	}
+// 	else if (i == 2) {
+// 		console.log("##")
+// 	}
+// 	else if (i == 3) {
+// 		console.log("###")
+// 	}
+// 	else if (i == 4) {
+// 		console.log("####")
+// 	}
+// 	else if (i == 5) {
+// 		console.log("#####")
+// 	}
+// 	else if (i == 6) {
+// 		console.log("######")
+// 	}
+// 	else if (i == 7) {
+// 		console.log("#######")
+// 	}
+// }
 
-for (i = 1; i <= argument; i++) {
-	if (i == 1) {
-		console.log("      #")
-	}
-	else if (i == 2) {
-		console.log("     ##")
-	}
-	else if (i == 3) {
-		console.log("    ###")
-	}
-	else if (i == 4) {
-		console.log("   ####")
-	}
-	else if (i == 5) {
-		console.log("  #####")
-	}
-	else if (i == 6) {
-		console.log(" ######")
-	}
-	else if (i == 7) {
-		console.log("#######")
-	}
-}
+// for (i = 1; i <= argument; i++) {
+// 	if (i == 1) {
+// 		console.log("      #")
+// 	}
+// 	else if (i == 2) {
+// 		console.log("     ##")
+// 	}
+// 	else if (i == 3) {
+// 		console.log("    ###")
+// 	}
+// 	else if (i == 4) {
+// 		console.log("   ####")
+// 	}
+// 	else if (i == 5) {
+// 		console.log("  #####")
+// 	}
+// 	else if (i == 6) {
+// 		console.log(" ######")
+// 	}
+// 	else if (i == 7) {
+// 		console.log("#######")
+// 	}
+// }
 
-for (i = 1; i <= argument; i++) {
-	if (i == 1) {
-		console.log("#######")
-	}
-	else if (i == 2) {
-		console.log("######")
-	}
-	else if (i == 3) {
-		console.log("#####")
-	}
-	else if (i == 4) {
-		console.log("####")
-	}
-	else if (i == 5) {
-		console.log("###")
-	}
-	else if (i == 6) {
-		console.log("##")
-	}
-	else if (i == 7) {
-		console.log("#")
-	}
-}
+// for (i = 1; i <= argument; i++) {
+// 	if (i == 1) {
+// 		console.log("#######")
+// 	}
+// 	else if (i == 2) {
+// 		console.log("######")
+// 	}
+// 	else if (i == 3) {
+// 		console.log("#####")
+// 	}
+// 	else if (i == 4) {
+// 		console.log("####")
+// 	}
+// 	else if (i == 5) {
+// 		console.log("###")
+// 	}
+// 	else if (i == 6) {
+// 		console.log("##")
+// 	}
+// 	else if (i == 7) {
+// 		console.log("#")
+// 	}
+// }
 
 
-for (i = 1; i <= argument; i++) {
-	if (i == 1) {
-		console.log("#######")
-	}
-	else if (i == 2) {
-		console.log(" ######")
-	}
-	else if (i == 3) {
-		console.log("  #####")
-	}
-	else if (i == 4) {
-		console.log("   ####")
-	}
-	else if (i == 5) {
-		console.log("    ###")
-	}
-	else if (i == 6) {
-		console.log("     ##")
-	}
-	else if (i == 7) {
-		console.log("      #")
-	}
-}
+// for (i = 1; i <= argument; i++) {
+// 	if (i == 1) {
+// 		console.log("#######")
+// 	}
+// 	else if (i == 2) {
+// 		console.log(" ######")
+// 	}
+// 	else if (i == 3) {
+// 		console.log("  #####")
+// 	}
+// 	else if (i == 4) {
+// 		console.log("   ####")
+// 	}
+// 	else if (i == 5) {
+// 		console.log("    ###")
+// 	}
+// 	else if (i == 6) {
+// 		console.log("     ##")
+// 	}
+// 	else if (i == 7) {
+// 		console.log("      #")
+// 	}
+// }
+
+10. Find the Median
+
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+let ordered = nums.sort(function(a, b){return a-b});
+
+let median = (ordered[Math.floor(nums.length/2)]);
+
+console.log(median);
