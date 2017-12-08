@@ -108,8 +108,51 @@
 // };
 // console.log(bucket);
 
+// let argument = 7;
+// let bucket = ""; 
 
+// for (let i = 1; i <= argument; i++) {
+//   console.log(bucket += '#');
+// }
 
+// let argument = 7;
+
+// for (let i = 1; i <= argument; i++) {
+// 	let bucket = "";
+//     for (let s = 1; s <= (argument - i); s++) {
+//       bucket += " ";
+//     }
+//     for (let r = 1; r <= i; r++) {
+//       bucket += "#";
+//     }
+//     console.log(bucket);
+//  }
+
+// let argument = 7;
+
+// for (let i = 1; i <= argument; i++) {
+// 	let bucket = "";
+//     for (let s = 1; s <= (argument - i); s++) {
+//       bucket += "#";
+//     }
+//     for (let r = 1; r <= i; r++) {
+//       bucket += " ";
+//     }
+//     console.log(bucket);
+//  }
+
+// let argument = 7;
+
+// for (let i = 1; i <= argument; i++) {
+// 	let bucket = "";
+//     for (let s = 1; s <= i; s++) {
+//       bucket += " ";
+//     }
+//     for (let r = 0; r <= (argument - i); r++) {
+//       bucket += "#";
+//     }
+//     console.log(bucket);
+//  }
 
 
 
