@@ -23,10 +23,7 @@
 //     }
 //
 // }
-// for(; i % 2 === 0; i++){
-//     //console.log(Math.random(randomCatQuote) * (randomCatQuote.length));
-//     // console.log(randomCatQuote[0]);
-// }
+
 ////"Commit 4 - Fizz Buzz answered"//////////////
 // for(i = 1;i <= 100; i++){
 //     if(i % 3 === 0){
@@ -61,6 +58,9 @@
 // for(var i in ninjaTurtles){
 //     console.log(ninjaTurtles[i]);
 // }
+//// for (i=0; i <= ninjaTurtles.length - 1; i++){
+//        console.log(ninjaTurtles[i)
+//       }
 
 
 // "Commit 7 - Kristyn and Thom have their outfits ready for class - array practice" ////////////
@@ -115,13 +115,57 @@
 // console.log(thomsCloset[2]);
 
 //"Commit 9 - Project Euler Problem 1 answered" ///////
-for(i=1; i <= 100; i++){
-    if(i % 3 === 0){
-        console.log(i)
-    }
-    else if(i % 5 === 0){
-        console.log(i);
-    }
+// for(i=1; i <= 100; i++){
+//     if(i % 3 === 0){
+//         console.log(i)
+//     }
+//     else if(i % 5 === 0){
+//         console.log(i);
+//     }
+// }
+
+//***********TRIANGLES**********************
+// 1
+const argument = 7;
+var x = "#";
+for(i=1; i <= argument; i++){
+    console.log(x);
+    x = x + x[0];
+}
+
+//2
+var argument = 7;
+var x = "#".padStart(argument, " ");
+for(i=1; i <= argument; i++){
+    console.log(x);
+    x = x.padStart(x.length - 1);
+    x = x.substring(1, x.length + 1);
+    x = x + "#";
+}
+
+// 3
+const argument = 7;
+var x = "#######";
+for(i=1; i <= argument; i++){
+    console.log(x);
+    x = x.substr(1);   // || x = x.substr(0, x.length - 1);
+}
+
+// 4 // add padding as the the # --
+// const argument = 7;
+// var x = "#######";
+// for(i=1; i <= argument; i++){
+//     console.log(x);
+//     x = x.padStart(x.length + 1);
+//     x = x.substring(0, x.length -1);
+// }
+// better way to do 4 /////////
+var argument = 7;
+var x = "".padStart(argument, "#");
+for(i=1; i <= argument; i++){
+    console.log(x);
+    x = x.padStart(x.length + 1);
+    x = x.substring(0, x.length -1);
 }
 
 
@@ -130,6 +174,30 @@ for(i=1; i <= 100; i++){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//*************FIND THE MEDIAN******************
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+let ordered = nums.sort;
+(function compare (x, z){
+    return x-z
+});
+console.log(ordered[Math.floor(ordered.length / 2)]);
+
+//To compare numbers instead of strings, the compare function can simply subtract z from x. The following function will sort the array ascending
 
 
 
