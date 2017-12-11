@@ -134,12 +134,21 @@ for(i=1; i <= argument; i++){
 }
 
 //2
+// var argument = 7;
+// var x = "#".padStart(argument, " ");
+// for(i=1; i <= argument; i++){
+//     console.log(x);
+//     x = x.padStart(x.length - 1);
+//     x = x.substring(1, x.length + 1);
+//     x = x + "#";
+// }
+
+//better way to do 2
 var argument = 7;
 var x = "#".padStart(argument, " ");
 for(i=1; i <= argument; i++){
     console.log(x);
-    x = x.padStart(x.length - 1);
-    x = x.substring(1, x.length + 1);
+    x = x.substr(1);
     x = x + "#";
 }
 
