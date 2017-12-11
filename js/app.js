@@ -126,13 +126,38 @@
 
 //***********TRIANGLES**********************
 // 1
+
+var argument = 7;
+//1
+for(i=1; i <= argument; i++){
+    x = "".padEnd(i, "#") +  "".padEnd(argument - i, " ");
+    console.log(x);
+}
+//2
+for(i=1; i <= argument; i++){
+    x = "".padEnd(argument - i, " ") + "".padEnd(i, "#");
+    console.log(x);
+}
+
+//3
+for(i=1; i <= argument; i++){
+    x = "".padEnd(argument - i, "#") + "".padEnd(i, " ");
+    console.log(x);
+}
+//4
+for(i=1; i <= argument; i++){
+    x = "".padEnd(i, " ") +  "".padEnd(argument - i, "#");
+    console.log(x);
+}
+
+
 const argument = 7;
 var x = "#";
 for(i=1; i <= argument; i++){
     console.log(x);
     x = x + x[0];
 }
-
+////////////////OTHER LESS EFFICENT WAYS TO DO ALL THE TRIANGLES///////////
 //2
 // var argument = 7;
 // var x = "#".padStart(argument, " ");
@@ -142,53 +167,60 @@ for(i=1; i <= argument; i++){
 //     x = x.substring(1, x.length + 1);
 //     x = x + "#";
 // }
-
-//better way to do 2
-var argument = 7;
-var x = "#".padStart(argument, " ");
-for(i=1; i <= argument; i++){
-    console.log(x);
-    x = x.substr(1);
-    x = x + "#";
-}
-
-// 3
-const argument = 7;
-var x = "#######";
-for(i=1; i <= argument; i++){
-    console.log(x);
-    x = x.substr(1);   // || x = x.substr(0, x.length - 1);
-}
-
-// 4 // add padding as the the # --
+//
+// //other way to do 2
+// var argument = 7;
+// var x = "#".padStart(argument, " ");
+// for(i=1; i <= argument; i++){
+//     console.log(x);
+//     x = x.substr(1);
+//     x = x + "#";
+// }
+//
+// // 3
 // const argument = 7;
 // var x = "#######";
 // for(i=1; i <= argument; i++){
 //     console.log(x);
+//     x = x.substr(1);   // || x = x.substr(0, x.length - 1);
+// }
+//
+// // 4 // add padding as the the # --
+// // const argument = 7;
+// // var x = "#######";
+// // for(i=1; i <= argument; i++){
+// //     console.log(x);
+// //     x = x.padStart(x.length + 1);
+// //     x = x.substring(0, x.length -1);
+// // }
+// // better way to do 4 /////////
+// var argument = 7;
+// var x = "".padStart(argument, "#");
+// for(i=1; i <= argument; i++){
+//     console.log(x);
 //     x = x.padStart(x.length + 1);
 //     x = x.substring(0, x.length -1);
-// }
-// better way to do 4 /////////
-var argument = 7;
-var x = "".padStart(argument, "#");
-for(i=1; i <= argument; i++){
-    console.log(x);
-    x = x.padStart(x.length + 1);
-    x = x.substring(0, x.length -1);
 }
-
+////////////////////////
 
 
 //*************FIND THE MEDIAN******************
-const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
-let ordered = nums.sort;
-(function compare (x, z){
-    return x-z
-});
-console.log(ordered[Math.floor(ordered.length / 2)]);
+// const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+// let ordered = nums.sort;
+// (function compare (x, z){
+//     return x-z
+// });
+// console.log(ordered[Math.floor(ordered.length / 2)]);
 
 //To compare numbers instead of strings, the compare function can simply subtract z from x. The following function will sort the array ascending
 
 
 
-
+//************X-MASS TREE MADE OF HASHTAGS AND DOTS AND A STAR*************
+// var argument = 17;
+// console.log("*".padStart(argument, ".") + "".padEnd(argument - 1, "."));
+// for(i=1; i <= argument; i++){
+//     x = "".padEnd(argument - i, ".") +  "".padEnd(i * 2 -1 , "#") +
+//         "".padEnd(argument - i, ".");
+//     console.log(x);
+// }
