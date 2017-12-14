@@ -1,42 +1,5 @@
-![ga](http://mobbook.generalassemb.ly/ga_cog.png)
-
-# chi-wdi-10-fluff-hounds
-
----
-Title: Arrays, Loops, and Conditional Reps <br>
-Type: Homework<br>
-Duration: "4:00"<br>
-Creator: WDI-Funke<br>
-    Modified by: Kristyn Bryan and then by: Reuben Ayres<br>
-    Course: chi-wdi-10<br>
-Competencies: Arrays, Loops, Conditionals <br>
-Language: JavaScript <br>
-
----
-# Homework
-
-## Setup
-
-1) Get in your `fluff_hounds` folder.
-
-1.5) From inside of fluff-hounds, Fork this repo and clone it.  
-
-2) (Did you see this coming?) Build our file structure and put your answers in app.js.
-
-3) Keep your answers organized! Included a commented header for each section in your answers file.
-
-4) For the purposes of keeping a tidy console while you work, comment out each exercise once it is completed and working, so that you're just looking at output from the one you completed.  Maybe when you're done, it would be nice to uncomment everything so we can see all the output at once while grading. But remember: if, later, you uncomment everything and try to reuse a variable name that you had previously `let`ed, you'll get an error.
-
-5) If you're stuck on something for "too long" or get overly frustrated, make a comment and move on. Return to it later.
-
-6) After each section (even if you're not fully done with it), *add* and *commit* your work.
-
-Please use the commit messages that you see at the end of each section (you can modify if necessary). We will see these messages on Github. It will help us to see your progress. If you go back and fix a section, commit again with an updated message.
-
-7) When you are done with your homework, push and make a pull request.
-
-Final note: You are not alone! Everyone else in the class is working on this as well. Communicate with each other on Slack.
-
+/*
+Somers Matthews
 
 ## Easy Going
 1. Write a for loop that will log the numbers 1 through 20.
@@ -45,7 +8,13 @@ Final note: You are not alone! Everyone else in the class is working on this as 
 &#x1F534; The commit message should read: <br>
 "Commit 1 -Easy Going answered"
 <hr>
+*/
 
+for(var i=1; i<=20; i++)
+{
+  console.log(i);
+}
+/*
 ## Get Even
 1. Write a for loop that will log only the even numbers in 0 through 200.
 >Hint: Think about the increment expression.
@@ -54,21 +23,45 @@ Final note: You are not alone! Everyone else in the class is working on this as 
 &#x1F534; The commit message should read: <br>
 "Commit 2 - Get Even answered"
 <hr>
+*/
 
+for(var i=0; i<=200; i++)
+{
+  console.log(i);
+}
+/*
 ## Excited Kitten
 1. Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
 
 2. For every **even** number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
 
 >Hint: You will need to use Math.random()
+*/
+var randomNum = 0;
+for(var i=0; i<=20; i++)
+{
+  console.log("Love me, pet me! HSSSSSS!");
 
-![Image of cat with funny quote about dot](https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRETGsssSXu2AS15GpQIBhuSgkhP2q_4JZcPopN4dFP-v85mAePGA)
+  if((i%2)===0)
+  {
+    randomNum = 3 * Math.random();
+    console.log(randomNum);
 
-<hr>
-&#x1F534; The commit message should read: <br>
-"Commit 3 - Excited Kittens answered"
-<hr>
-
+    if(0 <= randomNum && randomNum < 1)
+    {
+    console.log("...human...why you taking pictures of me?...");
+  } else if(1 <= randomNum && randomNum < 2)
+    {
+      console.log("...the catnip made me do it...");
+    } else if(2 <= randomNum && randomNum < 3)
+    {
+      console.log("...why does the red dot always get away...");
+    } else {
+      console.log("SOMETHING IS WRONG WITH YOUR CAT TALKING LOOP")
+    }
+  }
+}
+/*
 ## Fizz Buzz
 
 >NOTE: THIS IS A CLASSIC RITE-OF-PASSAGE FOR JAVASCRIPT PROGRAMMERS, ESPECIALLY ONES AT GA
@@ -80,12 +73,29 @@ Final note: You are not alone! Everyone else in the class is working on this as 
 3. If a number is divisible by 5 log "Buzz" instead of the number.
 
 4. If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number.
+*/
 
-<hr>
-&#x1F534; The commit message should read: <br>
-"Commit 4 - Fizz Buzz answered"
-<hr>
+for(var i=1;i<=100;i++)
+{
+  if((i%3)===0 && (i%5)===0)
+  {
+  console.log("FizzBuzz");
+  }
+  else if((i%3)===0)
+  {
+  console.log("Fizz");
+  }
+  else if((i%5)===0)
+  {
+  console.log("Buzz");
+  }
+  else
+  {
+  console.log(i);
+  }
+}
 
+/*
 ## Getting to Know You
 Use the following arrays to answer the questions below (name, age, hometown):
 ```
@@ -101,12 +111,23 @@ const matt = ["Matt H", 186, "Philadelphia"]
 3. Change Matt H's hometown from Philadelphia to "Gotham City".
 
 4. Remove "Pittsburgh" from Kristyn's array and add "Brooklyn".
+*/
+const thom = ["Thom", 1000, "Christchurch"];
+const karolin = ["Karolin", 16, "New York"];
+const kristyn = ["Kristyn", 5, "Pittsburgh"];
+const matt = ["Matt H", 186, "Philadelphia"];
 
-<hr>
-&#x1F534; The commit message should read: <br>
-"Commit 5 - Getting to Know You answered"
-<hr>
+thom.shift();
+thom.unshift("Gameboy");
 
+karolin[1] = karolin[1]+1
+
+matt[2] = "Brooklyn";
+
+kristyn.pop();
+kristyn.push("Brooklyn");
+
+/*
 ## Yell at the Ninja Turtles
 1. Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
 
@@ -116,8 +137,17 @@ const matt = ["Matt H", 186, "Philadelphia"]
 &#x1F534; The commit message should read: <br>
 "Commit 6 - Yell at the Ninja Turtles answered"
 <hr>
+*/
 
+var turtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
+for(var i=0;i<turtles.length;i++)
+{
+
+  console.log(turtles[i].toUpperCase());
+
+}
+/*
 ## Return of the Closets
 
 Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript. Use this data to answer the following questions.
@@ -165,11 +195,58 @@ const thomsCloset = [
 &#x1F534; The commit message should read: <br>
 "Commit 7 - Kristyn and Thom have their outfits ready for class - array practice"
 <hr>
+*/
 
-### Dirty Laundry
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+//console.log("first value kristyn =" + kristynsCloset[0])
+var kristynsShoe = kristynsCloset[0];
+kristynsCloset.shift();
+thomsCloset[2].push(kristynsShoe);
+//console.log("varible for kristiansShoe" + thomsCloset[2][3])
+
+for(var i=0;i<3;i++)
+{
+  console.log("Kristyn is wearing " + kristynsCloset[i] + "." + "Tom is wearing " + thomsCloset[0][i] + ", "  + thomsCloset[1][i] + ", and " + thomsCloset[2][i] + ".");
+}
+/*
+## Dirty Laundry
 Continue looking at the closet arrays:
 1. Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
+*/
 
+for(var i=0;i<Object.keys(kristynsCloset).length;i++)
+{
+  console.log("WHIRR: Now washing " + kristynsCloset[i] + ".");
+}
+/*
 ### Inventory
 2. Thom wants to do inventory on his closet. Using **bracket notation**, log the arrays containing all of Thom's shirts, pants, and accessories.
 
@@ -177,7 +254,15 @@ Continue looking at the closet arrays:
 &#x1F534; The commit message should read: <br>
 "Commit 8 - I loops through their closets".
 <hr>
-
+*/
+for(var i=0;i<Object.keys(thomsCloset).length;i++)
+{
+  for(var j=0;j<Object.keys(thomsCloset[i]).length;j++)
+  {
+    console.log(thomsCloset[i][j]);
+  }
+}
+/*
 ## Multiples of 3 and 5
 
 _Yes, you might have tackled this earlier, but try it again (don't look back at your other code :eyes:)_
@@ -192,17 +277,32 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 &#x1F534; The commit message should read: <br>
 "Commit 9 - Project Euler Problem 1 answered"
 <hr>
+*/
+var multiplesOfThree = [];
+var multiplesOfFive = [];
+var multiplesOfFifteen = [];
+var sum = 0;
+for(var i=1;(i*3)<1000;i++)
+{
+  multiplesOfThree[i] = i*3;
+  sum = sum + multiplesOfThree[i];
 
----
-# MAKE A PULL REQUEST TO SUBMIT YOUR HOMEWORK.
-
-# Dude that was a lot of coding. Have a beer! Or a ginger tea. or pet some puppies, or eat snacks, or watch Star Trek Deep Space Nine, or whatever you do to relax. then get some sleep.
-
-# EVERYTHING ABOVE THIS LINE IS DUE BEFORE CLASS THURSDAY 12/7. ("Wednesday Night's Homework").
-
-# Everything below this line is due before class Friday 12/8 (i.e. "Thursday Night's Homework, part 1 of maybe 2").
----
-
+}
+for(var j=1;(j*5)<1000;j++)
+{
+  multiplesOfFive[j] = j*5;
+  sum = sum + multiplesOfFive[j];
+}
+for(var k=1;(k*15)<1000;k++)
+{
+  multiplesOfFifteen[k] = k*15;
+  sum = sum - multiplesOfFifteen[k];
+}
+//console.log(multiplesOfThree);
+//console.log(multiplesOfFive);
+//console.log(multiplesOfFifteen)
+console.log("sum = " + sum);
+/*
 ## Triangles
 
 0. declare a variable `argument` and set it equal to 7.
@@ -220,6 +320,8 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 #######
 ```
 
+
+/*
 2. Write a loop that console logs a "right isosceles" triangle (SEE BELOW) made of '#' that has the height and length of `argument`.
 
 >Ex: argument is 7
@@ -233,52 +335,78 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 #######
 ```
 
+*/
 
-3. Write a loop that console logs an "upside down left" isosceles triangle made of '#' that has the height and length of the argument.
+const argument = 7;
+array = [];
+for(var i=1; i<=argument; i++)
+{
+  array.push("#");
 
->Ex: argument is 7
-```
-#######
-######
-#####
-####
-###
-##
-#
-```
+console.log(array.join('')+ "\n")
+}
+console.log('\n');
+var array2 = [];
 
-4. Write a loop that console logs an "upside down right" isosceles triangle made of '#' that has the height and length of the argument.
+for(var i=1; i<=argument; i++)
+{
+  for(k=1;k<=i;k++)
+  {
+  array2.push("#");
+  }
+  for(var j=0;j<(7-i);j++)
+  {
+  array2.push(" ");
+  }
 
->Ex: argument is 7
-```
-#######
- ######
-  #####
-   ####
-    ###
-     ##
-      #
-```
+console.log(array2.reverse().join('') + "\n")
+array2 = []
+}
 
-5. Change the value of argument and reload your code and marvel at how you just solved a challenging problem and feel proud of yourself.
+console.log('\n');
+array = [];
+for(var i=0; i<argument; i++)
+{
+  array.push("#");
+}
 
-<hr>
-&#x1F534; The commit message should read: <br>
-"Commit 10 - Triangles answered"
-<hr>
+for(var i=0; i<argument; i++)
+{
+  console.log(array.join('')+ "\n")
+  array.pop();
+}
 
-## Find the Median
-- Find the median number in the following `nums` array, then console.log that number.
--  _hint_ if you check the length of the array / 2, you might get not get a whole number. In which case, look into `Math.floor( // something )`
+console.log('\n');
 
-```
+array = [];
+for(var i=0; i<argument; i++)
+{
+  array.push("#");
+}
+
+for(var i=0; i<argument; i++)
+{
+for(j=0;j<i;j++)
+{
+array.pop();
+}
+for(j=0;j<i;j++)
+{
+array.push(' ');
+}
+console.log(array.reverse().join('') + "\n");
+array.reverse();
+
+}
+
 const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+nums.sort()
+var i = Math.floor(nums.length/2);
 
-Expected output:
-=> 15
-```
-
-<hr>
-&#x1F534; The commit message should read: <br>
-"Commit 11 - Find the Median answered"
-<hr>
+console.log(nums[i]);
+/*
+console.log(nums.length);
+console.log(sum);
+console.log("Median is " + Math.floor(sum/nums.length));
+// I'm getting 16 not the expected value of 15. I'm pretty sure I'm right with 16.
+*/
